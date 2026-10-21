@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f1ea;
+    color: #2c221e;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #3b271a;
+    color: #f4f1ea;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #d4af37;
+    letter-spacing: 1px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    color: #f4f1ea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #d4af37;
+}
+
+.hero {
+    background: linear-gradient(rgba(44, 34, 30, 0.7), rgba(44, 34, 30, 0.7)), url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #d4af37;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #d4af37;
+    color: #2c221e;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #b3922b;
+}
+
+.section-padding {
+    padding: 4rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    color: #3b271a;
+    border-bottom: 2px solid #d4af37;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0.5rem;
+}
+
+.grid-katalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.kartu-produk {
+    background-color: #fff;
+    border: 1px solid #dcd6cd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kartu-produk:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.kartu-produk img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.info-produk {
+    padding: 1.5rem;
+}
+
+.info-produk h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #3b271a;
+}
+
+.deskripsi {
+    font-size: 0.95rem;
+    color: #665c54;
+    margin-bottom: 1rem;
+}
+
+.harga {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #b85d19;
+    margin-bottom: 1rem;
+}
+
+.btn-pesan {
+    display: block;
+    text-align: center;
+    background-color: #3b271a;
+    color: #f4f1ea;
+    padding: 0.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.btn-pesan:hover {
+    background-color: #d4af37;
+    color: #2c221e;
+}
+
+.tentang-section {
+    background-color: #3b271a;
+    color: #f4f1ea;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.tentang-content h2 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+}
+
+.tentang-content p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+}
+
+.kontak-box {
+    background-color: #fff;
+    border: 1px solid #dcd6cd;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.kontak-box ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.kontak-box ul li {
+    margin-bottom: 0.75rem;
+}
+
+.kontak-box a {
+    color: #b85d19;
+    text-decoration: none;
+}
+
+.kontak-box a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #221711;
+    color: #9c9189;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    header nav ul {
+        gap: 1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .grid-katalog {
+        grid-template-columns: 1fr;
+    }
+}
