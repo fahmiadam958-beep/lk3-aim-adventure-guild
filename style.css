@@ -56,7 +56,6 @@ header nav ul li a:hover {
     color: #d4af37;
 }
 
-/* Hero Section */
 .hero {
     background: linear-gradient(rgba(44, 34, 30, 0.7), rgba(44, 34, 30, 0.7)), url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
     color: #fff;
@@ -115,7 +114,6 @@ header nav ul li a:hover {
     color: #2c221e;
 }
 
-/* Sections & Titles */
 .section-padding {
     padding: 4rem 0;
 }
@@ -145,7 +143,6 @@ header nav ul li a:hover {
     font-size: 1rem;
 }
 
-/* Grid & Cards Layout */
 .grid-katalog {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -213,7 +210,6 @@ header nav ul li a:hover {
     color: #2c221e;
 }
 
-/* --- GAYA KHUSUS PAPAN MISI --- */
 .kartu-misi {
     position: relative;
     border: 2px solid #d4af37;
@@ -254,7 +250,6 @@ header nav ul li a:hover {
     color: #ffffff;
 }
 
-/* --- GAYA SECTION VIDEO TUR GUILD --- */
 .video-container-wrapper {
     background-color: #ffffff;
     border: 1px solid #dcd6cd;
@@ -291,7 +286,6 @@ header nav ul li a:hover {
     height: 100%;
 }
 
-/* About & Contact Section */
 .tentang-section {
     background-color: #3b271a;
     color: #f4f1ea;
@@ -346,7 +340,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsiveness */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
