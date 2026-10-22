@@ -56,6 +56,7 @@ header nav ul li a:hover {
     color: #d4af37;
 }
 
+/* Hero Section */
 .hero {
     background: linear-gradient(rgba(44, 34, 30, 0.7), rgba(44, 34, 30, 0.7)), url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
     color: #fff;
@@ -75,6 +76,13 @@ header nav ul li a:hover {
     margin: 0 auto 2rem auto;
 }
 
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
 .btn-primary {
     display: inline-block;
     background-color: #d4af37;
@@ -90,14 +98,38 @@ header nav ul li a:hover {
     background-color: #b3922b;
 }
 
+.btn-secondary {
+    display: inline-block;
+    background-color: transparent;
+    color: #f4f1ea;
+    border: 2px solid #d4af37;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #d4af37;
+    color: #2c221e;
+}
+
+/* Sections & Titles */
 .section-padding {
     padding: 4rem 0;
+}
+
+.bg-light {
+    background-color: #eae5d9;
+    border-top: 1px solid #dcd6cd;
+    border-bottom: 1px solid #dcd6cd;
 }
 
 .section-title {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 0.5rem;
     color: #3b271a;
     border-bottom: 2px solid #d4af37;
     display: table;
@@ -106,6 +138,14 @@ header nav ul li a:hover {
     padding-bottom: 0.5rem;
 }
 
+.section-subtitle {
+    text-align: center;
+    color: #665c54;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+}
+
+/* Grid & Cards Layout */
 .grid-katalog {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -173,6 +213,85 @@ header nav ul li a:hover {
     color: #2c221e;
 }
 
+/* --- GAYA KHUSUS PAPAN MISI --- */
+.kartu-misi {
+    position: relative;
+    border: 2px solid #d4af37;
+    background-color: #fffdf9;
+}
+
+.badge-misi {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: #2e7d32;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.3rem 0.75rem;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    z-index: 2;
+}
+
+.badge-bahaya {
+    background-color: #c62828;
+}
+
+.harga.imbalan {
+    color: #2e7d32;
+    font-size: 1.15rem;
+}
+
+.btn-misi {
+    background-color: #d4af37;
+    color: #2c221e;
+}
+
+.btn-misi:hover {
+    background-color: #b85d19;
+    color: #ffffff;
+}
+
+/* --- GAYA SECTION VIDEO TUR GUILD --- */
+.video-container-wrapper {
+    background-color: #ffffff;
+    border: 1px solid #dcd6cd;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(59, 39, 26, 0.08);
+    text-align: center;
+}
+
+.video-deskripsi {
+    font-size: 1.05rem;
+    color: #665c54;
+    margin-bottom: 1.5rem;
+}
+
+.video-responsive {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #3b271a;
+}
+
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* About & Contact Section */
 .tentang-section {
     background-color: #3b271a;
     color: #f4f1ea;
@@ -227,6 +346,7 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Responsiveness */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
@@ -235,6 +355,8 @@ footer {
 
     header nav ul {
         gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .hero-content h2 {
@@ -244,40 +366,4 @@ footer {
     .grid-katalog {
         grid-template-columns: 1fr;
     }
-}
-
-.video-container-wrapper {
-    background-color: #ffffff;
-    border: 1px solid #dcd6cd;
-    border-radius: 8px;
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    box-shadow: 0 4px 12px rgba(59, 39, 26, 0.08);
-    text-align: center;
-}
-
-.video-deskripsi {
-    font-size: 1.05rem;
-    color: #665c54;
-    margin-bottom: 1.5rem;
-}
-
-.video-responsive {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* Rasio aspek 16:9 */
-    height: 0;
-    overflow: hidden;
-    border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 2px solid #3b271a;
-}
-
-.video-responsive iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adventurer's Guild Emporium - Katalog Misi & Item</title>
+    <title>Adventurer's Guild Emporium - Papan Misi & Katalog Item</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +13,8 @@
             <nav>
                 <ul>
                     <li><a href="#beranda">Beranda</a></li>
-                    <li><a href="#produk">Katalog Item</a></li>
+                    <li><a href="#papan-misi">Papan Misi</a></li>
+                    <li><a href="#katalog-item">Katalog Item</a></li>
                     <li><a href="#tentang">Tentang Guild</a></li>
                     <li><a href="#video-guild">Tur Markas</a></li>
                     <li><a href="#kontak">Papan Kontak</a></li>
@@ -25,13 +26,51 @@
         <section id="beranda" class="hero">
             <div class="container hero-content">
                 <h2>Papan Misi & Katalog Perlengkapan Petualang</h2>
-                <p>Temukan berbagai ramuan, camilan penambah stamina, dan artefak kerajinan tangan terbaik untuk menemani perjalananmu menaklukkan dungeon!</p>
-                <a href="#produk" class="btn-primary">Ambil Misi (Lihat Katalog)</a>
+                <p>Ambil misi berbahaya untuk menguji ketangguhanmu atau belanja perlengkapan bertualang sebelum pergi menaklukkan dungeon!</p>
+                <div class="hero-buttons">
+                    <a href="#papan-misi" class="btn-primary">Lihat Papan Misi</a>
+                    <a href="#katalog-item" class="btn-secondary">Lihat Katalog Item</a>
+                </div>
             </div>
         </section>
-        
-        <section id="produk" class="container section-padding">
-            <h2 class="section-title">Daftar Item & Misi Tersedia</h2>
+
+        <!-- SECTION 1: BAGIAN PAPAN MISI -->
+        <section id="papan-misi" class="container section-padding">
+            <h2 class="section-title">Papan Misi Guild</h2>
+            <p class="section-subtitle">Pilih misi yang sesuai dengan tingkatan kelas petualangmu dan dapatkan imbalan Gold!</p>
+            
+            <div class="grid-katalog">
+                <!-- MISI 1: Memburu Slime -->
+                <article class="kartu-produk kartu-misi">
+                    <div class="badge-misi">MISI KELAS F</div>
+                    <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&w=600&q=80" alt="Memburu Slime Hijau">
+                    <div class="info-produk">
+                        <h3>Memburu Slime Hijau</h3>
+                        <p class="deskripsi">Bersihkan area Hutan Bisikan dari perkembangbiakan Slime Hijau yang mengganggu peternak lokal.</p>
+                        <span class="harga imbalan">Hadiah: 50.000 Gold</span>
+                        <a href="#kontak" class="btn-pesan btn-misi">Ambil Misi Ini</a>
+                    </div>
+                </article>
+
+                <!-- MISI 2: Menangkap Bandit -->
+                <article class="kartu-produk kartu-misi">
+                    <div class="badge-misi badge-bahaya">MISI KELAS C</div>
+                    <img src="https://images.unsplash.com/photo-1514539079130-25950c84af65?auto=format&fit=crop&w=600&q=80" alt="Menangkap Bandit Hutan">
+                    <div class="info-produk">
+                        <h3>Menangkap Bandit Hutan</h3>
+                        <p class="deskripsi">Lumpuhkan kelompok bandit pimpinan 'Si Tangan Besi' yang sering menghadang pedagang di jalur barat.</p>
+                        <span class="harga imbalan">Hadiah: 350.000 Gold</span>
+                        <a href="#kontak" class="btn-pesan btn-misi">Ambil Misi Ini</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECTION 2: BAGIAN KATALOG ITEM -->
+        <section id="katalog-item" class="container section-padding bg-light">
+            <h2 class="section-title">Katalog Item & Logistik</h2>
+            <p class="section-subtitle">Perlengkapan, ramuan, dan konsumsi resmi dari Guild Emporium untuk persiapan petualangan.</p>
+            
             <div class="grid-katalog">
                 <article class="kartu-produk">
                     <img src="image/potion.jpg" alt="Potion Pemulih Mana">
@@ -39,7 +78,7 @@
                         <h3>Potion Pemulih Mana</h3>
                         <p class="deskripsi">Minuman herbal menyegarkan untuk mengembalikan energi seketika setelah bertarung.</p>
                         <span class="harga">Rp 15.000</span>
-                        <a href="#kontak" class="btn-pesan">Klaim Item</a>
+                        <a href="#kontak" class="btn-pesan">Beli Item</a>
                     </div>
                 </article>
                 <article class="kartu-produk">
@@ -48,7 +87,7 @@
                         <h3>Roti Bakar Dragon Scale</h3>
                         <p class="deskripsi">Roti panggang renyah dengan olesan selai rahasia penjaga gerbang dungeon.</p>
                         <span class="harga">Rp 12.000</span>
-                        <a href="#kontak" class="btn-pesan">Klaim Item</a>
+                        <a href="#kontak" class="btn-pesan">Beli Item</a>
                     </div>
                 </article>
                 <article class="kartu-produk">
@@ -57,7 +96,7 @@
                         <h3>Keripik Pedas Orc Fire</h3>
                         <p class="deskripsi">Keripik singkong super pedas yang membakar lidah bagaikan napas Orc.</p>
                         <span class="harga">Rp 10.000</span>
-                        <a href="#kontak" class="btn-pesan">Klaim Item</a>
+                        <a href="#kontak" class="btn-pesan">Beli Item</a>
                     </div>
                 </article>
                 <article class="kartu-produk">
@@ -66,7 +105,7 @@
                         <h3>Gantungan Kunci Guild Crest</h3>
                         <p class="deskripsi">Aksesori lambang guild resmi yang terbuat dari logam pilihan anti karat.</p>
                         <span class="harga">Rp 25.000</span>
-                        <a href="#kontak" class="btn-pesan">Klaim Item</a>
+                        <a href="#kontak" class="btn-pesan">Beli Item</a>
                     </div>
                 </article>
                 <article class="kartu-produk">
@@ -75,7 +114,7 @@
                         <h3>Tas Selempang Adventurer</h3>
                         <p class="deskripsi">Tas kanvas tangguh berkapasitas besar untuk membawa loot hasil berburu.</p>
                         <span class="harga">Rp 95.000</span>
-                        <a href="#kontak" class="btn-pesan">Klaim Item</a>
+                        <a href="#kontak" class="btn-pesan">Beli Item</a>
                     </div>
                 </article>
                 <article class="kartu-produk">
@@ -84,17 +123,20 @@
                         <h3>Jurnal Petualang Kulit</h3>
                         <p class="deskripsi">Buku catatan bersampul kulit sintetis untuk mencatat peta dan resep ramuan.</p>
                         <span class="harga">Rp 45.000</span>
-                        <a href="#kontak" class="btn-pesan">Klaim Item</a>
+                        <a href="#kontak" class="btn-pesan">Beli Item</a>
                     </div>
                 </article>
             </div>
         </section>
+
         <section id="tentang" class="tentang-section">
             <div class="container tentang-content">
                 <h2>Tentang Guild Emporium</h2>
                 <p>Adventurer's Guild Emporium adalah pusat penyediaan logistik dan perlengkapan terpercaya bagi para petualang di seluruh penjuru negeri. Berdiri dengan misi memastikan setiap pejuang memiliki energi dan perlengkapan terbaik sebelum menghadapi tantangan berat di luar sana.</p>
             </div>
         </section>
+
+        <!-- Bagian Video Tur Sinematik Markas Guild -->
         <section id="video-guild" class="container section-padding">
             <h2 class="section-title">Tur Sinematik Markas Guild</h2>
             <div class="video-container-wrapper">
@@ -109,11 +151,13 @@
                 </div>
             </div>
         </section>
+
         <section id="kontak" class="container section-padding">
             <h2 class="section-title">Papan Kontak & Pemesanan</h2>
             <div class="kontak-box">
                 <p>Ingin memesan item atau mendaftarkan misi khusus? Hubungi petugas guild melalui tautan di bawah ini:</p>
                 <ul>
+                    <li><strong>Guild Radio (WhatsApp):</strong> <a href="https://wa.me/6281234567890" target="_blank">+62 812-3456-7890</a></li>
                     <li><strong>Markas Utama (Alamat):</strong> Jl. Petualang No. 404, Kota Fantasi, Magelang</li>
                     <li><strong>Guild Square (Instagram):</strong> <a href="#">@guild.emporium</a></li>
                 </ul>
